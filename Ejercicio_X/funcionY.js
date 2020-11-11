@@ -99,7 +99,39 @@ function calculoRadio2(radio){
 
 //Declarar variables
 
+//Nota: aplicar float;
 
+let areaT;
+let baseB;
+let alturaA;
+
+function CalcularB(){
+
+//Leer variables
+
+//Ingresar base.
+baseB= parseFloat(document.getElementById('base1').value);
+
+//Ingresar altura.
+alturaA= parseFloat(document.getElementById('altura1').value);
+
+//Invocar función
+areaT = areaTriangulo(baseB,alturaA);
+
+//Imprimir
+
+document.getElementById('totalarea3').value= areaT;
+
+}
+
+//Procedimiento
+
+
+function areaTriangulo(baseB,alturaA){
+
+    areaT = baseB*alturaA;
+    return areaT;
+}
 
 
 
