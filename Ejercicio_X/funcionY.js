@@ -133,9 +133,57 @@ function areaTriangulo(baseB,alturaA){
     return areaT;
 }
 
+//Final
+
+//-------------------------------------------------------------------------------------------------->
+
+//Ejercicio #4//
+
+//Inicio
+
+//Declarar Variables
+///Nota: aplicar float
+
+let radio;
+let radio2;
+let areaCirc;
+let numeroPi=3.1416;
+
+function CalcularC(){
+
+//Leer variables
+
+//Ingresar radio
+radio = Number(document.getElementById('radio').value); 
 
 
+//Invocar Función
+areaCirc = areaCircunferencia(numeroPi,radio2);
+radio2 = calculoRadio2(radio); 
 
+
+//Imprimir
+document.getElementById('totalarea2').value= numeroPi*radio2;
+
+}
+
+//Procedimiento
+
+function areaCircunferencia(numeroPi,radio2){
+
+areaCirc = numeroPi*radio2;
+return areaCirc;
+
+}
+
+function calculoRadio2(radio){
+
+    radio2 = radio*radio;
+    return radio2;
+    
+    }
+
+//Final
 
 
 
