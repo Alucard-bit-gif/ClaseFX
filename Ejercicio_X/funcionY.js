@@ -190,67 +190,50 @@ let num_minutes;
 let horaCompleta;
 let cobroEstacion;
 
-//Leer Variables
+
 
 function CalcularD(){
 
-//Registar valor hora
+//Leer Variables
+
+//Registrar valor hora
+valorHora = Number(document.getElementById('precio').value); 
 
 //Registrar número de horas
-num_horas = parseFloat(document.getElementById('horas').value); 
+num_horas = Number(document.getElementById('horas').value); 
 
 //Registrar número minutos
-num_minutes = parseFloat(document.getElementById('mints').value); 
+num_minutes = Number(document.getElementById('mints').value); 
 
+//Invocar función
+horaCompleta = calculoHoraC(num_horas, num_minutes);
+cobroEstacion = calculoPrecioE(horaCompleta, valorHora);
+
+//Imprimir
+document.getElementById('totalarea5').value= cobroEstacion;
 
 }
-
-horas(h) = 2;
-minutos(m) = 20;
-Resultado (fH) = 2 + (20/60) + (1 - (20/60)) ;
-totalfH = 2 + 0.33 + (1 - 0.33)
-totalfH = 2.33 + 0.67 = 3h.
-Resultado (cobroE) = 2000 * 3;
-cobroE = 6000.*/
-
-/*Resultado (tiempoG) = 9:45 - 7:25 = 2h 20m;
-
-//Inicio
-
-//Declarar
-
-/* let valorH1;
-   let horaI;
-   let horaS;
-   let tiempoG;
-   let horas;
-   let minutos;
-   let cobroE;
-   let fH;
-*/
-
-//Leer
-
-let valorH1 = 2000;
-let horaI = 7.25;
-let horaS = 9.45;
 
 
 //Procedimiento
 
-let tiempoG = 9.45 - 7.25;
-let horas = 2;
-let minutos = 20;
-let fH = (2 + (20/60)) + (1 - (20/60));
-let cobroE = fH * valorH1;
+function calculoHoraC(num_horas,num_minutes){
 
-//Resultado
+    horaCompleta= num_horas + (num_minutes/60) + (1 - (num_minutes/60)); 
+    return horaCompleta;
 
-let rQ14 = document.querySelector('.rQ14');
-rQ14.innerHTML = "El valor del estacionamiento es de " + " " + "COP$" + cobroE + " pesos" + " " + 
-                "por 2h 20 min";    
+}
+
+function calculoPrecioE(horaCompleta,valorHora){
+
+    cobroEstacion= valorHora*horaCompleta;
+    return cobroEstacion;
+
+}
 
 //Final 
+
+//-------------------------------------------------------------------------------------------------------->
 
 
 
