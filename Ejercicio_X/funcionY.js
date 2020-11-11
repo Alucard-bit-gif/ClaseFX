@@ -129,7 +129,7 @@ document.getElementById('totalarea3').value= areaT;
 
 function areaTriangulo(baseB,alturaA){
 
-    areaT = baseB*alturaA;
+    areaT = (baseB*alturaA)/2;
     return areaT;
 }
 
