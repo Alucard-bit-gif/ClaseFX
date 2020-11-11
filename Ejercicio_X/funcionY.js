@@ -176,9 +176,76 @@ return pulgadaTela;
 
 //Final
 
+//-------------------------------------------------------------------------------------------------->
+
+//Ejercicio # 5//
+
+
+// Declarar Variables
+
+
+const valorHora
+let num_horas;
+let num_minutes;
+let horaCompleta;
+let cobroEstacion;
+
+//Leer Variables
+
+//Registrar hora de ingreso
 
 
 
+Leer  valorHora= 2000;
+Leer horaIngreso = ;
+Leer horaSalida = ;
+
+horas(h) = 2;
+minutos(m) = 20;
+Resultado (fH) = 2 + (20/60) + (1 - (20/60)) ;
+totalfH = 2 + 0.33 + (1 - 0.33)
+totalfH = 2.33 + 0.67 = 3h.
+Resultado (cobroE) = 2000 * 3;
+cobroE = 6000.*/
+
+/*Resultado (tiempoG) = 9:45 - 7:25 = 2h 20m;
+
+//Inicio
+
+//Declarar
+
+/* let valorH1;
+   let horaI;
+   let horaS;
+   let tiempoG;
+   let horas;
+   let minutos;
+   let cobroE;
+   let fH;
+*/
+
+//Leer
+
+let valorH1 = 2000;
+let horaI = 7.25;
+let horaS = 9.45;
+
+
+//Procedimiento
+
+let tiempoG = 9.45 - 7.25;
+let horas = 2;
+let minutos = 20;
+let fH = (2 + (20/60)) + (1 - (20/60));
+let cobroE = fH * valorH1;
+
+//Resultado
+
+let rQ14 = document.querySelector('.rQ14');
+rQ14.innerHTML = "El valor del estacionamiento es de " + " " + "COP$" + cobroE + " pesos" + " " + 
+                "por 2h 20 min";    
+
+//Final 
 
 
 
