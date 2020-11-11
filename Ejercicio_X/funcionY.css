@@ -4,7 +4,7 @@ h1
     color: rgb(22, 190, 86);
 }
 
-.row, .row2
+.row, .row2, .row3
 {
     
     padding-top: 10px;
@@ -27,7 +27,6 @@ h1
     margin-top: -460px;
     font-size: 21.34px;
     
-
 }
 
 
@@ -51,7 +50,7 @@ h1
     left: 72px;
 }
 
-.area
+.area, .area3
 {
     position: relative;
     left: 90px;
@@ -59,7 +58,7 @@ h1
 
 
 
-#radio, .area2
+#radio, .area2 
 {
     position: relative;
     left: 80px;
@@ -72,9 +71,17 @@ h1
     left: 86px;
 }
 
+#base1, #altura1
+{
+    position: relative;
+    left: 90px;
+}
 
-
-
+.zi
+{
+    position: relative;
+    left: 70px;
+}
 
 
 
