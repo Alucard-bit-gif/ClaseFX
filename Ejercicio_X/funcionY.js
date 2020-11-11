@@ -144,44 +144,35 @@ function areaTriangulo(baseB,alturaA){
 //Declarar Variables
 ///Nota: aplicar float
 
-let radio;
-let radio2;
-let areaCirc;
-let numeroPi=3.1416;
+let metrosTela;
+const numeroPulgas=0.0254;
+let pulgadaTela;
 
 function CalcularC(){
 
 //Leer variables
 
-//Ingresar radio
-radio = Number(document.getElementById('radio').value); 
+//Ingresar metros
+metrosTela = parseFloat(document.getElementById('metros').value); 
 
 
 //Invocar Función
-areaCirc = areaCircunferencia(numeroPi,radio2);
-radio2 = calculoRadio2(radio); 
-
+pulgadaTela = calculoPulgada(metrosTela);
+ 
 
 //Imprimir
-document.getElementById('totalarea2').value= numeroPi*radio2;
+document.getElementById('totalarea4').value= pulgadaTela;
 
 }
 
 //Procedimiento
 
-function areaCircunferencia(numeroPi,radio2){
+function calculoPulgada(metrosTela){
 
-areaCirc = numeroPi*radio2;
-return areaCirc;
+pulgadaTela = metrosTela/numeroPulgas;
+return pulgadaTela;
 
 }
-
-function calculoRadio2(radio){
-
-    radio2 = radio*radio;
-    return radio2;
-    
-    }
 
 //Final
 
