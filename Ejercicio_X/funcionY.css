@@ -1,0 +1,89 @@
+h1
+{
+    text-align: center;
+    color: rgb(22, 190, 86);
+}
+
+.row, .row2
+{
+    
+    padding-top: 10px;
+    width: 30%;
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: rgb(122, 122, 122);
+    border-top: 1px solid;
+    border-bottom:8px solid rgb(16, 206, 180);
+    margin-left: 50px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.row2 
+{
+    margin-left: 750px;
+    margin-bottom: 5px;
+    margin-top: -460px;
+    font-size: 21.34px;
+    
+
+}
+
+
+#Boton
+{
+    position: relative;
+    left: 155px;
+}
+
+#base, #altura
+
+{
+    position: relative;
+    left: 90px;
+}
+
+
+.xi
+{
+    position: relative;
+    left: 72px;
+}
+
+.area
+{
+    position: relative;
+    left: 90px;
+}
+
+
+
+#radio, .area2
+{
+    position: relative;
+    left: 80px;
+}
+
+.yi
+
+{
+    position: relative;
+    left: 86px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Archivo para funciones a entregar miércoles*/
