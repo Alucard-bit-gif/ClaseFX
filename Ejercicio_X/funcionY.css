@@ -99,9 +99,42 @@ h1
     
 }
 
+#precio, #horas, #mints, #totalarea5
+
+{
+    position: relative;
+    left: 100px;
+}
 
 
+.valor
+{
+    position: relative;
+    left: 95px;
+}
 
+.beta
+{
+    position: relative;
+    left: 145px;
+}
 
+.zeta
+{
+    position: relative;
+    left: 145px;
+}
+
+.X6
+{
+    position: relative;
+    left: 145px;
+}
+
+#Boton5
+{
+    position: relative;
+    left: 159px;
+}
 
 /*Archivo para funciones a entregar miércoles*/

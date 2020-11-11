@@ -184,7 +184,7 @@ return pulgadaTela;
 // Declarar Variables
 
 
-const valorHora
+let valorHora;
 let num_horas;
 let num_minutes;
 let horaCompleta;
@@ -192,13 +192,18 @@ let cobroEstacion;
 
 //Leer Variables
 
-//Registrar hora de ingreso
+function CalcularD(){
+
+//Registar valor hora
+
+//Registrar número de horas
+num_horas = parseFloat(document.getElementById('horas').value); 
+
+//Registrar número minutos
+num_minutes = parseFloat(document.getElementById('mints').value); 
 
 
-
-Leer  valorHora= 2000;
-Leer horaIngreso = ;
-Leer horaSalida = ;
+}
 
 horas(h) = 2;
 minutos(m) = 20;
