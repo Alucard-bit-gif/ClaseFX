@@ -449,7 +449,46 @@ function CalcularG(){
 
 
     //Final
+     //----------------------------------------------------------------------------------------------->
+     
+     //Ejercicio # 9//
 
+    //Inicio
+
+    //Declarar variables
+
+    let numKilometros;
+    let veloz; 
+    let tiempo;
+
+    function CalcularI(){
+
+    //Ingresar numero litros
+    numKilometros = Number(document.getElementById('distance').value); 
+
+    //Ingresar precio galon
+    veloz = Number(document.getElementById('speed').value);
+
+    //Invocar función
+    tiempo= calcularTiempo(numKilometros, veloz);
+    
+
+    //Imprimir
+
+    document.getElementById('totalarea9').value= numKilometros/veloz;
+
+
+}
+
+    //Procedimiento
+
+     function calcularTiempo(numKilometros, veloz){
+         tiempo = numKilometros/veloz;
+         return tiempo;
+     }
+
+
+    //Final
 
 
 
