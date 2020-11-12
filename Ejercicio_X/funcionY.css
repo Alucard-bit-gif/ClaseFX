@@ -174,7 +174,7 @@ h1
    left: 120px;
 }
 
-#distn, #precioK, #totalarea8, #totalarea9, #distnc
+#distn, #precioK, #totalarea8, #totalarea9, #distance, #speed
 {
     position: relative;
     left: 95px;
@@ -185,7 +185,7 @@ h1
     left:115px;
 }
 
-.kilomt 
+.kilomt, .velozK
 
 {
     position: relative;
@@ -196,7 +196,7 @@ h1
 {
 
     position: relative;
-    left: 150px;
+    left: 115px;
 }
 
 
