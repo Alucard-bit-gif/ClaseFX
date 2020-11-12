@@ -371,6 +371,45 @@ function CalcularG(){
 
     //-------------------------------------------------------------------------------------------------->
 
+    //Ejercicio # 8//
+
+    //Inicio
+
+    //Declarar variables
+
+    let kilm;
+    let prekilm;
+    let pasaje;
+
+    function CalcularH(){
+
+    //Ingresar numero litros
+    kilm = Number(document.getElementById('distn').value); 
+
+    //Ingresar precio galon
+    prekilm = Number(document.getElementById('precioK').value);
+
+    //Invocar función
+    pasaje= calcularTarifa(kilm, prekilm);
+    
+
+    //Imprimir
+
+    document.getElementById('totalarea8').value= kilm*prekilm;
+
+
+}
+
+    //Procedimiento
+
+     function calcularTarifa(kilm, prekilm){
+         pasaje = kilm*prekilm;
+         return pasaje;
+     }
+
+
+    //Final
+
     
 
 
