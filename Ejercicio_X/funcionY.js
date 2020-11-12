@@ -267,7 +267,13 @@ function CalcularG(){
     //Ingresar cantidad Mocasines.
     qTenis = Number(document.getElementById('tenis').value); 
 
-    
+    //Invocar función.
+
+    totalvzap = sumazap();
+    ventadesc = zapatosDesc(totalvzap, porcentajedesc);
+    desc= totalDesc(totalvzap,ventadesc);
+    iva= totalIVA(ventadesc, porcentajeiva);
+    ventaFinal = sumaIVAZAP(ventadesc, iva);
 
 
 
