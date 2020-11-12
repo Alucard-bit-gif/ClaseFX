@@ -89,7 +89,7 @@ h1
     left: 77px;
 }
 
-.row4, .row10
+.row4
 
 {
     margin-left: 750px;
@@ -146,6 +146,17 @@ h1
     
 }
 
+.row10
+
+{
+    margin-left: 750px;
+    margin-bottom: 5px;
+    margin-top: -660px;
+    font-size: 20px;
+    
+}
+
+
 #boton7{
     position: relative;
     left: 50px;
@@ -198,6 +209,24 @@ h1
     position: relative;
     left: 115px;
 }
+
+.celminutes, .costminutes, .X100
+{
+
+    position: relative;
+    left: 115px;
+
+}
+
+#twominutes, #tomidnight, #totalarea10
+
+{
+    position: relative;
+    left: 80px;
+}
+
+
+
 
 
 
