@@ -4,7 +4,7 @@ h1
     color: rgb(22, 190, 86);
 }
 
-.row, .row2, .row3, .row4, .row5, .row6, .row7
+.row, .row2, .row3, .row4, .row5, .row6, .row7, .row8
 {
     
     padding-top: 10px;
@@ -137,7 +137,7 @@ h1
     left: 159px;
 }
 
- .row6
+ .row6, .row8
  {
     margin-left: 750px;
     margin-bottom: 5px;
@@ -151,6 +151,7 @@ h1
     left: 50px;
 }
 
+
 #GeekBack
 
 {
@@ -159,5 +160,28 @@ h1
     left:125px;
     bottom: 1050px;
 
+}
+
+.row8
+{
+    margin-top: -958px;
+}
+
+.kilom
+
+{
+   position: relative;
+   left: 120px;
+}
+
+#distn, #precioK, #totalarea8
+{
+    position: relative;
+    left: 95px;
+}
+.Costok
+{
+    position: relative;
+    left:115px;
 }
 /*Archivo para funciones a entregar miércoles*/
