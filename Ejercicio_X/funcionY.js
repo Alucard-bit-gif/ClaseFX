@@ -417,33 +417,33 @@ function CalcularG(){
 
     //Declarar variables
 
-    let numKilmtrs;
-    const veloz; 
+    let numKilometros;
+    let veloz; 
     let tiempo;
 
     function CalcularI(){
 
     //Ingresar numero litros
-    numKilmtrs = Number(document.getElementById('distance').value); 
+    numKilometros = Number(document.getElementById('distance').value); 
 
     //Ingresar precio galon
     veloz = Number(document.getElementById('speed').value);
 
     //Invocar función
-    tiempo= calcularTiempo(numKilmtrs, veloz);
+    tiempo= calcularTiempo(numKilometros, veloz);
     
 
     //Imprimir
 
-    document.getElementById('totalarea9').value= numKilmtrs/veloz;
+    document.getElementById('totalarea9').value= numKilometros/veloz;
 
 
 }
 
     //Procedimiento
 
-     function calcularTiempo(numKilmtrs, veloz){
-         tiempo = numKilmtrs/veloz;
+     function calcularTiempo(numKilometros, veloz){
+         tiempo = numKilometros/veloz;
          return tiempo;
      }
 
