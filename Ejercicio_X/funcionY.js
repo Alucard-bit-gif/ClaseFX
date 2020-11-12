@@ -383,10 +383,10 @@ function CalcularG(){
 
     function CalcularH(){
 
-    //Ingresar numero litros
+    //Ingresar numero kilómetros
     kilm = Number(document.getElementById('distn').value); 
 
-    //Ingresar precio galon
+    //Ingresar precio/kilómetro
     prekilm = Number(document.getElementById('precioK').value);
 
     //Invocar función
@@ -409,9 +409,46 @@ function CalcularG(){
 
 
     //Final
+//------------------------------------------------------------------------------------------------------->
+    
+//Ejercicio # 9//
 
+    //Inicio
+
+    //Declarar variables
+
+    let numKilmtrs;
+    const veloz; 
+    let tiempo;
+
+    function CalcularI(){
+
+    //Ingresar numero litros
+    numKilmtrs = Number(document.getElementById('distance').value); 
+
+    //Ingresar precio galon
+    veloz = Number(document.getElementById('speed').value);
+
+    //Invocar función
+    tiempo= calcularTiempo(numKilmtrs, veloz);
     
 
+    //Imprimir
+
+    document.getElementById('totalarea9').value= numKilmtrs/veloz;
+
+
+}
+
+    //Procedimiento
+
+     function calcularTiempo(numKilmtrs, veloz){
+         tiempo = numKilmtrs/veloz;
+         return tiempo;
+     }
+
+
+    //Final
 
 
 
