@@ -174,14 +174,31 @@ h1
    left: 120px;
 }
 
-#distn, #precioK, #totalarea8
+#distn, #precioK, #totalarea8, #totalarea9, #distnc
 {
     position: relative;
     left: 95px;
 }
-.Costok
+.Costok 
 {
     position: relative;
     left:115px;
 }
+
+.kilomt 
+
+{
+    position: relative;
+    left: 115px;
+}
+
+.X99
+{
+
+    position: relative;
+    left: 150px;
+}
+
+
+
 /*Archivo para funciones a entregar miércoles*/
