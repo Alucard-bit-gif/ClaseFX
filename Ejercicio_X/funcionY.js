@@ -235,6 +235,58 @@ function calculoPrecioE(horaCompleta,valorHora){
 
 //-------------------------------------------------------------------------------------------------------->
 
+// Ejercicio # 6
+
+//Inicio
+
+//Declarar variables
+
+const pSandalias= 267000;
+let qSandalias;
+const pTenis= 355000;
+let qTenis;
+const pMocasines=244000;
+let qMocasines;
+const porcentajeiva = 0.19;
+const porcentajedesc = 1.08;
+let totalvzap;
+let ventadesc;
+let desc;
+let iva;
+let ventaFinal;
+
+function CalcularG(){
+
+    //Leer variables
+    //Ingresar cantidad Sandalias.
+    qSandalias = Number(document.getElementById('sandia').value); 
+
+    //Ingresar cantidad Tenis.
+    qTenis = Number(document.getElementById('tenis').value); 
+
+    //Ingresar cantidad Mocasines.
+    qTenis = Number(document.getElementById('tenis').value); 
+
+    
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+(totalvzap) = 267.000 + 355.000 + 244.000 = 866.000;
+parseInt(ventadesc) = 866.000/1.08 = 801851
+(desc) = 866000 - 801851 = 64149;
+ventafinal = 801851 * 0,19 = 152352
+ventafinal = 801851+152352 = 954203.
 
 
 
