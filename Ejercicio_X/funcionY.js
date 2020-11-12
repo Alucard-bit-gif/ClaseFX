@@ -331,12 +331,40 @@ function CalcularG(){
     let litros;
     let precioGalon;
     const galon = 3.785;
+    let litrosGalon;
     let ventaGalon;
+
+    function CalcularF(){
 
     //Leer variables
 
-    //Ingresar 
+    //Ingresar numero litros
+    litros = Number(document.getElementById('cubicos').value); 
 
+    //Ingresar precio galon
+    precioGalon = Number(document.getElementById('galon7').value);
+
+    //Invocar función
+    ventaGalon = sumaPrecioGalon(litrosGalon, precioGalon);
+    litrosGalon = totalLitrosGalon(litros, galon);
+
+    //Imprimir
+
+    document.getElementById('totalarea7').value= ventaGalon;
+
+    }
+
+    //Procedimiento
+
+     function sumaPrecioGalon(litrosGalon, precioGalon){
+         ventaGalon = parseInt(litrosGalon*precioGalon);
+         return ventaGalon;
+     }
+
+     function totalLitrosGalon(litros, galon){
+        litrosGalon = parseFloat(litros*galon);
+        return litrosGalon;
+    }
 
 
 
