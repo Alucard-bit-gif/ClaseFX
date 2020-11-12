@@ -254,10 +254,15 @@ let ventadesc;
 let desc;
 let iva;
 let ventaFinal;
+let nameCliente;
 
 function CalcularG(){
 
     //Leer variables
+    
+    //Ingresar nombre cliente.
+    nameCliente = document.getElementById('user').value;
+    
     //Ingresar cantidad Sandalias.
     qSandalias = Number(document.getElementById('sandia').value); 
 
@@ -265,35 +270,72 @@ function CalcularG(){
     qTenis = Number(document.getElementById('tenis').value); 
 
     //Ingresar cantidad Mocasines.
-    qTenis = Number(document.getElementById('tenis').value); 
+    qMocasines = Number(document.getElementById('mocas').value); 
 
     //Invocar función.
 
-    totalvzap = sumazap();
+    totalvzap = sumazap(qSandalias,qTenis,qMocasines);
     ventadesc = zapatosDesc(totalvzap, porcentajedesc);
     desc= totalDesc(totalvzap,ventadesc);
     iva= totalIVA(ventadesc, porcentajeiva);
     ventaFinal = sumaIVAZAP(ventadesc, iva);
 
+    //Imprimir.
 
-
-
-
-
-
-
-
-
+    document.getElementById('factura').value= `Cliente: ${nameCliente}
+                                               Venta sin descuento: COP$ ${totalvzap} 
+                                               Descuento: COP$ ${desc} 
+                                               Venta con descuento: COP$ ${ventadesc} 
+                                               Venta Neta: COP$ ${ventaFinal}`;
+    
+    
 }
 
+    //Procedimiento.
+    
+    var sumazap = function(qSandalias,qTenis,qMocasines){
+    totalvzap = (qSandalias*pSandalias) + (qTenis*pTenis) + (qMocasines*pMocasines);
+    return totalvzap;
+    }
 
+    function zapatosDesc(totalvzap, porcentajedesc){
+        ventadesc= parseInt(totalvzap/porcentajedesc);
+        return ventadesc;
+    }
 
-(totalvzap) = 267.000 + 355.000 + 244.000 = 866.000;
-parseInt(ventadesc) = 866.000/1.08 = 801851
-(desc) = 866000 - 801851 = 64149;
-ventafinal = 801851 * 0,19 = 152352
-ventafinal = 801851+152352 = 954203.
+    function totalDesc(totalvzap, ventadesc){
+    desc= totalvzap - ventadesc;
+    return desc;
+    }
 
+    function totalIVA(ventadesc, porcentajeiva){
+        iva= ventadesc*porcentajeiva;
+        return iva;
+    }
+
+    function sumaIVAZAP(ventadesc, iva){
+        ventaFinal= ventadesc + iva;
+        return parseInt(ventaFinal);
+    }
+
+//Final
+
+//--------------------------------------------------------------------------------------------------------->
+
+    //Ejercicio # 7//
+
+    //Inicio
+
+    //Declarar variables
+
+    let litros;
+    let precioGalon;
+    const galon = 3.785;
+    let ventaGalon;
+
+    //Leer variables
+
+    //Ingresar 
 
 
 

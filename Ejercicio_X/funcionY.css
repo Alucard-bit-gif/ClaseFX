@@ -4,7 +4,7 @@ h1
     color: rgb(22, 190, 86);
 }
 
-.row, .row2, .row3, .row4, .row5, .row6
+.row, .row2, .row3, .row4, .row5, .row6, .row7
 {
     
     padding-top: 10px;
@@ -146,4 +146,8 @@ h1
     
 }
 
+#boton7{
+    position: relative;
+    left: 50px;
+}
 /*Archivo para funciones a entregar miércoles*/
