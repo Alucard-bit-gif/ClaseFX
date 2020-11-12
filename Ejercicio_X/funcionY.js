@@ -330,11 +330,11 @@ function CalcularG(){
 
     let litros;
     let precioGalon;
-    const galon = 3.785;
     let litrosGalon;
     let ventaGalon;
+    const qGalon = 3.785;
 
-    function CalcularF(){
+    function proyectarF(){
 
     //Leer variables
 
@@ -346,23 +346,24 @@ function CalcularG(){
 
     //Invocar función
     ventaGalon = sumaPrecioGalon(litrosGalon, precioGalon);
-    litrosGalon = totalLitrosGalon(litros, galon);
+    litrosGalon = totalLitrosGalon(litros);
 
     //Imprimir
 
-    document.getElementById('totalarea7').value= ventaGalon;
+    document.getElementById('totalarea7').value= litrosGalon*precioGalon;
 
-    }
+
+}
 
     //Procedimiento
 
      function sumaPrecioGalon(litrosGalon, precioGalon){
-         ventaGalon = parseInt(litrosGalon*precioGalon);
+         ventaGalon = litrosGalon*precioGalon;
          return ventaGalon;
      }
 
-     function totalLitrosGalon(litros, galon){
-        litrosGalon = parseFloat(litros*galon);
+     function totalLitrosGalon(litros){
+        litrosGalon = parseFloat(litros*qGalon);
         return litrosGalon;
     }
 
