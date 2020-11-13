@@ -451,7 +451,7 @@ function CalcularG(){
     //Final
      //----------------------------------------------------------------------------------------------->
      
-     //Ejercicio # 9//
+    //Ejercicio # 10//
 
     //Inicio
 
@@ -490,9 +490,46 @@ function CalcularG(){
 
     //Final
 
+//------------------------------------------------------------------------------------------------->
+
+//Ejercicio # 11//
+
+    //Inicio
+
+    //Declarar variables
+
+    let kiloVatios;
+    let valorKiloW; 
+    let totalPagoKw;
+
+    function CalcularK(){
+
+    //Ingresar numero minutos
+    kiloVatios = Number(document.getElementById('kilowatts').value); 
+
+    //Ingresar precio minuto
+    valorKiloW = Number(document.getElementById('costwatts').value);
+
+    //Invocar función
+    totalPagoKw = calcularPagoKw(kiloVatios, valorKiloW);
+    
+
+    //Imprimir
+
+    document.getElementById('totalarea10').value= kiloVatios*valorKiloW;
 
 
+}
 
+    //Procedimiento
+
+     function calcularPagoKw(kiloVatios, valorKiloW){
+         totalPagoKw = kiloVatios*valorKiloW;
+         return totalPagoKw;
+     }
+
+
+    //Final
 
 
 //Archivo para funciones a entregar miércoles*/
