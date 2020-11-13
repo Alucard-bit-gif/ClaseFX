@@ -461,7 +461,7 @@ function CalcularG(){
     let costMinutes; 
     let totalCost;
 
-    function CalcularI(){
+    function CalcularJ(){
 
     //Ingresar numero minutos
     timeMinutes = Number(document.getElementById('twominutes').value); 
@@ -475,7 +475,7 @@ function CalcularG(){
 
     //Imprimir
 
-    document.getElementById('totalarea10').value= numKilometros/veloz;
+    document.getElementById('totalarea10').value= timeMinutes*costMinutes;
 
 
 }
@@ -483,7 +483,7 @@ function CalcularG(){
     //Procedimiento
 
      function calcularPago(timeMinutes, costMinutes){
-         totalCost = timeMinutes/costMinutes;
+         totalCost = timeMinutes*costMinutes;
          return totalCost;
      }
 
