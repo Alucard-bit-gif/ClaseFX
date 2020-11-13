@@ -4,7 +4,7 @@ h1
     color: rgb(22, 190, 86);
 }
 
-.row, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10
+.row, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10, .row11
 {
     
     padding-top: 10px;
@@ -218,16 +218,43 @@ h1
 
 }
 
-#twominutes, #tomidnight, #totalarea10
+#twominutes, #tomidnight, #totalarea10, #kilowatts, #costwatts, #totalarea11
 
 {
     position: relative;
     left: 80px;
 }
 
+.row11
+{
+    margin-top: 25px;
+}
 
+.kilovatios 
 
+{
 
+    position: relative;
+    left: 105px;
 
+}
+
+ .X110
+
+{
+
+    position: relative;
+    left: 135px;
+
+}
+
+.valor_kw
+
+{
+
+    position: relative;
+    left: 155px;
+
+}
 
 /*Archivo para funciones a entregar miércoles*/
