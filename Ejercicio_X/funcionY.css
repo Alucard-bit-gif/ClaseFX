@@ -210,13 +210,23 @@ h1
     left: 115px;
 }
 
-.celminutes, .costminutes, .X100
+.celminutes, .costminutes
 {
 
     position: relative;
-    left: 115px;
+    left: 120px;
 
 }
+
+.X100
+
+{
+
+    position: relative;
+    left: 133px;
+
+}
+
 
 #twominutes, #tomidnight, #totalarea10, #kilowatts, #costwatts, #totalarea11
 
@@ -239,12 +249,12 @@ h1
 
 }
 
- .X110
+ .X111
 
 {
 
     position: relative;
-    left: 135px;
+    left:135px;
 
 }
 
