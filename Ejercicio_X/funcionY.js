@@ -540,7 +540,7 @@ function CalcularG(){
     //Declarar variables
 
     let priceObjectX;
-    const porcentLess=0.20; 
+    const porcentLess=1.20; 
     let priceLess;
     const taxIVA=0.19;
     let ivaObjectX;
