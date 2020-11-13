@@ -585,6 +585,8 @@ function CalcularG(){
 
 
     //Final
+     //------------------------------------------------------------------------------------------------>
 
+     
 
 //Archivo para funciones a entregar miércoles*/
