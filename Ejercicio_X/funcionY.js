@@ -516,7 +516,7 @@ function CalcularG(){
 
     //Imprimir
 
-    document.getElementById('totalarea10').value= kiloVatios*valorKiloW;
+    document.getElementById('totalarea11').value= kiloVatios*valorKiloW;
 
 
 }
