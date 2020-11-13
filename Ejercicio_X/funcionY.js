@@ -531,5 +531,60 @@ function CalcularG(){
 
     //Final
 
+//-------------------------------------------------------------------------------------------------->
+
+//Ejercicio # 12//
+
+    //Inicio
+
+    //Declarar variables
+
+    let priceObjectX;
+    const porcentLess=0.20; 
+    let priceLess;
+    const taxIVA=0.19;
+    let ivaObjectX;
+    let finalObjectX;
+
+    function CalcularL(){
+
+    //Ingresar precio artículo
+    priceObjectX = Number(document.getElementById('SuperX').value); 
+
+
+    //Invocar función
+    priceLess = calcularLess(priceObjectX, porcentLess);
+    ivaObjectX = calcularIVA(priceLess, taxIVA)
+    finalObjectX = calcularFinal(priceLess, taxIVA);
+    
+    //Imprimir
+
+    document.getElementById('PriceX').value= priceLess;
+    document.getElementById('totalarea12').value= priceLess + ivaObjectX;
+
+
+}
+
+    //Procedimiento
+
+    function calcularFinal(priceLess, ivaObjectX){
+        finalObjectX = priceLess + ivaObjectX;
+        return parseInt(finalObjectX);
+    }
+
+    function calcularIVA(priceLess, taxIVA){
+        ivaObjectX = priceLess * taxIVA
+        return parseInt(ivaObjectX)
+    }
+
+    
+    function calcularLess(priceObjectX, porcentLess){
+         priceLess = priceObjectX/porcentLess;
+         return parseInt(priceLess);
+     }
+
+
+    //Final
+
 
 //Archivo para funciones a entregar miércoles*/
