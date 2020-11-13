@@ -4,7 +4,7 @@ h1
     color: rgb(22, 190, 86);
 }
 
-.row, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10, .row11
+.row, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10, .row11, .row12
 {
     
     padding-top: 10px;
@@ -146,7 +146,7 @@ h1
     
 }
 
-.row10
+.row10, .row12
 
 {
     margin-left: 750px;
@@ -228,7 +228,8 @@ h1
 }
 
 
-#twominutes, #tomidnight, #totalarea10, #kilowatts, #costwatts, #totalarea11
+#twominutes, #tomidnight, #totalarea10, #kilowatts, #costwatts, #totalarea11, 
+#SuperX, #PriceX, #totalarea12
 
 {
     position: relative;
@@ -240,7 +241,7 @@ h1
     margin-top: 25px;
 }
 
-.kilovatios 
+.kilovatios, .chemicalX
 
 {
 
@@ -266,5 +267,25 @@ h1
     left: 155px;
 
 }
+
+.precioDesc
+
+{
+
+    position: relative;
+    left: 90px;
+
+}
+
+
+.X122
+
+{
+
+    position: relative;
+    left: 145px;
+
+}
+
 
 /*Archivo para funciones a entregar miércoles*/
