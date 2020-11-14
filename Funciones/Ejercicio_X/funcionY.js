@@ -587,6 +587,64 @@ function CalcularG(){
     //Final
      //------------------------------------------------------------------------------------------------>
 
+     //Ejercicio # 13//
+
+    //Inicio
+
+    //Declarar variables
+
+    const salarioMes;
+    const ahorroPorcent = 1.15;
+    let qahorroSem;
+    const semanasMes = 4; 
+    let qahorroMes;
+    const mesesAño = 12;
+    let ahorroAnual;
+
+
+    function CalcularX14(){
+
+    //Leer variables
+
+    //Ingresar salario por Mes
+    salarioMes = Number(document.getElementById('EnterX').value); 
+
+
+    //Invocar función
+    qahorroSem = calcularSem(salarioMes, ahorroPorcent)
+    qahorroMes = calcularMes(qahorroSem, semanasMes);
+    ahorroAnual = calcularAnual(qahorroMes, mesesAño);
+   
+    
+    //Imprimir
+
+    document.getElementById('EnterX14').value= ahorroAnual;
+    
+
+
+}
+
+    //Procedimiento
+
+    function calcularSem(salarioMes, ahorroPorcent){
+        qahorroSem = salarioMes  - (salarioMes/ahorroPorcent);
+        return parseInt(qahorroSem);
+    }
+
+    function calcularMes(qahorroSem, semanasMes){
+        qahorroMes = qahorroSem * semanasMes
+        return parseInt(qahorroMes)
+    }
+
+    
+    function calcularAnual(qahorroMes,mesesAño){
+         ahorroAnual = qahorroMes*mesesAño;
+         return parseInt(ahorroAnual);
+     }
+
+
+    //Final
+
      
 
 //Archivo para funciones a entregar miércoles*/
