@@ -593,7 +593,7 @@ function CalcularG(){
 
     //Declarar variables
 
-    const salarioMes;
+    let salarioMes;
     const ahorroPorcent = 1.15;
     let qahorroSem;
     const semanasMes = 4; 
@@ -618,7 +618,7 @@ function CalcularG(){
     
     //Imprimir
 
-    document.getElementById('EnterX14').value= ahorroAnual;
+    document.getElementById('EnterX14').value= qahorroMes*mesesAño;
     
 
 
